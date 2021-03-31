@@ -5,8 +5,18 @@ all:
 	latex La_Strategie_Developpement_Chinoise
 	dvips La_Strategie_Developpement_Chinoise.dvi
 	ps2pdf La_Strategie_Developpement_Chinoise.ps
+	htlatex La_Strategie_Developpement_Chinoise.tex "xhtml,fn-in"
 
 clean:
+	rm -rf *.4ct
+	rm -rf *.4tc
+	rm -rf *.idv
+	rm -rf *.lg
+	rm -rf *.tmp
+	rm -rf *.xref
+	rm -rf *.lg
+	rm -rf *.html
+	rm -rf *.css
 	rm -rf *.aux
 	rm -rf *.pdf
 	rm -rf *.dvi
