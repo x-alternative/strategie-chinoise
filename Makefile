@@ -1,11 +1,11 @@
 all:
-	latex La_Strategie_Developpement_Chinoise
-	bibtex La_Strategie_Developpement_Chinoise
-	latex La_Strategie_Developpement_Chinoise
-	latex La_Strategie_Developpement_Chinoise
-	dvips La_Strategie_Developpement_Chinoise.dvi
-	ps2pdf La_Strategie_Developpement_Chinoise.ps
-	htlatex La_Strategie_Developpement_Chinoise.tex "xhtml,fn-in"
+	latex document
+	bibtex document
+	latex document
+	latex document
+	dvips document.dvi
+	ps2pdf document.ps
+	htlatex document.tex "xhtml,fn-in"
 
 clean:
 	rm -rf *.4ct
